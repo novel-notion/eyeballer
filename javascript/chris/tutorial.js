@@ -6,6 +6,12 @@ let cap = new cv.VideoCapture(video);
 let faces = new cv.RectVector();
 let classifier = new cv.CascadeClassifier();
 
+
+function onOpenCvReady() {
+	document.getElementById('status').innerHTML = 'OpenCV.js is ready.';
+}
+
+
 // load pre-trained classifiers
 classifier.load('haarcascade_frontalface_default.xml');
 
