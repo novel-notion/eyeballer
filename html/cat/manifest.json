@@ -15,5 +15,6 @@
       },
       "description": "Opens popup.html"
     }
-  }
+  },
+  "background" :["background.js"]
 }
